@@ -1,0 +1,22 @@
+<html>
+  <body>
+    <button onclick="aloha()">Say Aloha</button>
+    <button onclick="reload()">Reload</button>
+    <ul>
+      <li>This is the first line</li>
+    </ul>
+    <script>
+      function aloha(){
+        var ul=document.getElementsByTagName("ul")[0];
+        var newli=document.createElement("li");
+        var newText=document.createTextNode("Aloha");
+        newli.appendChild(newText);
+        ul.appendChild(newli);
+        document.body.appendChild(ul);
+      }
+      function reload(){
+        document.location.reload()
+      }
+    </script>
+  </body>
+</html>
